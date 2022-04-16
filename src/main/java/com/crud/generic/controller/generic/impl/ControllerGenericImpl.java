@@ -44,11 +44,6 @@ public class ControllerGenericImpl<T extends BaseEntity> implements ControllerGe
 		}
 	}
 	
-	@GetMapping("/hello-world")
-	public ResponseEntity<String> get() {
-		return ResponseEntity.ok("Hello World!");
-	}
-	
 	@Override
 	@GetMapping("/get/{id}")
 	public ResponseEntity<Object> getById(@PathVariable("id") Long id)   
